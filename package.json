@@ -1,0 +1,31 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon ./server",
+    "start": "node ./server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucldk/mock-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucldk/mock-api/issues"
+  },
+  "homepage": "https://github.com/ucldk/mock-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
