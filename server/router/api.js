@@ -18,7 +18,6 @@ export default (router) => {
       const entry = await createTask(req.body);
       res.status(201).json({ id: entry.insertId, ...req.body });
     } catch(error) {
-      console.error(error.message, error);
       return res.status(400).json(error.message);
     }
   });
@@ -27,7 +26,6 @@ export default (router) => {
       const entryUpdate = await updateTask(req.body);
       res.status(204).json(`Updated task with id "${entryUpdate.id}"`);
     } catch (error) {
-      console.error(error.message, error);
       return res.status(400).json(error.message);
     }
   });
