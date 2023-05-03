@@ -56,6 +56,32 @@ Keep-Alive: timeout=5
 {"id":8,"title":"A task"}
 ```
 
+### Update task
+
+#### Request
+
+`PUT /tasks`
+
+```
+curl -X PUT --location 'localhost:3000/tasks' -H 'Content-Type: application/json' -d '{ "title": "A task", "completed": 1 }'
+```
+
+#### Response
+
+```
+HTTP/1.1 204 NoContent
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 25
+ETag: W/"19-qAaPWFpm68yj6yiLtk/CGTgXXYY"
+Date: Wed, 3 May 2023 10:56:20 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[]
+```
+
 ### List pending tasks
 
 #### Request
